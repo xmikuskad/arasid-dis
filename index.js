@@ -22,7 +22,7 @@ const {
   PresenceUpdateStatus,
 } = require("discord.js");
 const processMessage = require("./modules/processMessage");
-const processAudio = require("./modules/processAudio");
+const { SOUND_COUNT, processAudio } = require("./modules/processAudio");
 
 function getToken() {
   try {
@@ -36,7 +36,12 @@ function getToken() {
 // Create a new client instance
 const client = new Client({
   presence: {
-    activities: [{ name: "to 119 🔥 sounds", type: ActivityType.Listening }],
+    activities: [
+      {
+        name: "to " + SOUND_COUNT + " 🔥 sounds",
+        type: ActivityType.Listening,
+      },
+    ],
     status: PresenceUpdateStatus.Online,
   },
   intents: [
@@ -60,16 +65,8 @@ client.on(Events.MessageCreate, (message) => {
     return;
   }
 
-  let songId = 0;
-  for (let i = 1; i < 120; i++) {
-    if (message.content === i.toString()) {
-      songId = i;
-      break;
-    }
-  }
-
   processMessage(message);
-  processAudio(songId, message, client);
+  processAudio(message, client);
 });
 
 // Log in to Discord with your client's token

@@ -1,0 +1,28 @@
+const howMuchText = [
+  "Nie je šanca. 0",
+  "Čo najviac.",
+  "69 <:MonikaFound:934906718389944353>",
+  "420 ☘️",
+  "4. Ani nie viac ani nie menej.",
+  "A čo ma po tom <:JakubDab:749317841701830697>",
+  "Tipni si",
+  "Deväť. Možno desäť.",
+  "Spýtaj sa <@503252604038414353>, rád ti odpovie.",
+  "Niečo medzi 1 a 0.",
+  "Tebe už nič nepomôže.",
+  "93 kg",
+  "30 cm",
+  "Tak pol litrika domáceho.",
+  "8 hodín spánku.",
+  "Presne 145 717",
+  "O niečo menej ako si myslíš",
+  "Poznáš ten moment tesne pred nekonečnom? Tak 13.",
+  "<:whoasked:941386293928161280>",
+  "Zatiaľ stále 0 <:GaboHolik:934061170246156358>",
+  "Na túto odpoveď nie som kvalifikovaný.",
+  "Povedal by som 13 ale ževraj to je nezákonné <:Lyzicka:853959157723430952>",
+  "Obvod <@540925067006050334>vho hrudníku. Na milimetre presne.",
+  "Vyhovuje 7?",
+];
+
+module.exports = howMuchText;

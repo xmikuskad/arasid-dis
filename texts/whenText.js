@@ -13,6 +13,17 @@ const whenText = [
   "Vravia že lásky dáávno niät",
   "Keď Zdena vymyslela klinové písmo",
   "Na ďalšie Vianoce. A skús menej fetovať",
+  "NIKDY",
+  "Za hodku.",
+  "Ešte jednu epizódu pozri",
+  "Daj dve ARAMky a uvidíme",
+  "Dneska určite nie.",
+  "Až mesiac príde do 35% zatmenia",
+  "O 9:38 ráno.",
+  "Keď Peťovi narastú vlasy",
+  "Po tom ako si spolu pozrieme Večerníčka",
+  "Na jarmoku, vidíme sa",
+  "Možno na tvojom pohrebe.",
 ];
 
 module.exports = whenText;

@@ -1,11 +1,11 @@
 const whoText = [
-  "Tvoja mamka",
+  "Tvoja mamka <:MonikaFound:934906718389944353>",
   "Tvoj Tatko",
   "Pápež",
   "Andrej Kiska",
   "Branislav Mojsej",
   "Romanove pravé vajce",
-  "Neviem, spýtaj sa <@563689829116674068>",
+  "Neviem, spýtaj sa @Adam",
   "Mám na toto odpovedať?",
   "Akože skús sa zamyslieť radšej nad svojím životom",
   "Ten koho netreba vetovať",
@@ -16,7 +16,7 @@ const whoText = [
   "Dušan určite nie",
   "Sfúkaný ego na bicykli",
   "Kaliňák so stoporenou predkožkou bežiaci na Somálskom maratóne",
-  "Martinga z Tuhca",
+  "Martinga z Turca",
   "Tvojho Otca Koňa Brat",
   "Dobrá otázka ale mali by ti zobrať občiansky",
   "Všetci ti môžu závidieť",
@@ -24,6 +24,13 @@ const whoText = [
   "Robo Kazík čo ho jazdí kamzík",
   "Nohy jak tvoj toci cez víkend",
   "Tvoj tatko čo jazdí na tvojej hrdzavej sestre",
+  "Len a len ty <:JakubDab:749317841701830697>",
+  "Monika <:MonikaFound:934906718389944353>",
+  "🤷",
+  "Nikky <:nikkyziadnetricky:729090921496576030>",
+  "Holá ťa pozdravuje",
+  "Bazén s klasickými rozmermi.",
+  "Najebaný Matúš na felde",
 ];
 
 module.exports = whoText;

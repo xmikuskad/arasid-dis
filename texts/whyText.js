@@ -21,6 +21,13 @@ const whyText = [
   "Radšej sa zamysli nad sebou",
   "Darovanej flaši na kolok nepozeraj",
   "Tetičko, promiň, zatím o tom mluvit nechci. Nechceš mi radši vyprávět o AIDS?",
+  "Pretože po zajtrašku bude pozajtrajšok",
+  "Sorry, ale vážne ste si mysleli, že poznám odpoveď na túto otázku?",
+  "Aby mal Zuckerberg čo sledovať na facebooku",
+  "Asi ti vystavím faktúru za takú úžasnú otázku",
+  "Dajte mi pls ban, nech nemusím čítať otázky od tohoto človeka",
+  "A jéje, této otázky sem se bál",
+  "Nepýtajte sa ma pidžoviny prosím",
 ];
 
 module.exports = whyText;

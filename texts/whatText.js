@@ -14,6 +14,16 @@ const whatText = [
   "Somálec s poukážkou na potraviny.",
   "Niečo ako ošťatý drevený sex s tvojou sestrou",
   "Ak máš bobky, hádž",
+  "To je na zamyslenie 🤔",
+  "Čo by na takéto otázky povedalo tvoje dieťa",
+  "To neviem, ale vedel si že je 13.8% šanca na to, že zomrieš na svoje narodeniny?",
+  "No nič, svieť.",
+  "Romanu Žilákovú <:JakubDab:749317841701830697>",
+  "1000 a jedna noc. Alebo teda vlastne Šehrezádu.",
+  "Sme bezmocný. Radšej sa choď najebať.",
+  "Toto nepôjde ani keď začneme fetovať." /
+    "No veľký tresk." /
+    "Masturbovať <:nikkyziadnetricky:729090921496576030>",
 ];
 
 module.exports = whatText;

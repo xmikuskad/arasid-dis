@@ -11,7 +11,20 @@ const whereText = [
   "Hľadal som ale jebäť",
   "Skoč",
   "STU učilište",
-  "Kde bolo tam bolo, <@503252604038414353> búchal po stole kokotom",
+  "Kde bolo tam bolo, Jakub búchal po stole kokotom",
+  "Bastila. Oh wait <:GaboHolik:934061170246156358>",
+  "U Rastíka na byte <:MonikaFound:934906718389944353>",
+  "Môže byť u mňa doma?",
+  "Roman ťa už čaká <:MonikaFound:934906718389944353>",
+  "No to je jasné, pod mostom",
+  "Tam kde sa zdržiavajú staršie pani",
+  "Zajtra. Aha počkať..  v Tescu.",
+  "Tak toto ani v Lidli nezoženieš",
+  "Možno v bordeli nájdeš odpoveď.",
+  "Ani u teba doma by toto neprešlo.",
+  "Ideálne čo najďalej. Skús Mariánsku priekopu.",
+  "Jeb sa na to. Choď sa prejsť.",
+  "Miestnosť 47, Gymnázium VBN. Budem tam.",
 ];
 
 module.exports = whereText;

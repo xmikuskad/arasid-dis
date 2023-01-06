@@ -6,18 +6,21 @@ const whenText = require("../texts/whenText");
 const whereText = require("../texts/whereText");
 const whoText = require("../texts/whoText");
 const generalText = require("../texts/generalText");
+const howMuchText = require("../texts/howMuchText");
 
 let map = null;
 
 const GENERAL = "general";
 const HOW = "how";
+const HOW_MUCH = "how_much";
 const WHAT = "what";
 const WHEN = "when";
 const WHERE = "where";
 const WHO = "who";
 const WHY = "why";
 
-const MAX_QUEUE_SIZE = 2;
+const MAX_QUEUE_SIZE = 10;
+const MAX_ATTEMPTS = 100;
 
 function processMessage(message) {
   if (map === null) {
@@ -34,11 +37,14 @@ function processMessage(message) {
   let command = splitted[1];
   command = removeDiacritics(command).toLowerCase();
 
-  let answer = "";
+  let answer;
   switch (command) {
     case "how":
     case "ako":
       answer = getAnswer(HOW, howText);
+      break;
+    case "kolko": // TODO english?
+      answer = getAnswer(HOW_MUCH, howMuchText);
       break;
     case "why":
     case "preco":
@@ -68,13 +74,7 @@ function processMessage(message) {
       break;
   }
 
-  // const reactionEmoji = message.guild.emojis.cache.find(
-  //   (emoji) => emoji.name === "KEKW"
-  // );
-  // console.log(reactionEmoji);
-
   message.reply({
-    // content: "<:KEKW:1060946930341007450>",
     content: answer,
     allowedMentions: { repliedUser: true },
   });
@@ -82,7 +82,7 @@ function processMessage(message) {
 
 function getAnswer(command, array) {
   const usedNums = map.get(command);
-  let attempts = 100;
+  let attempts = MAX_ATTEMPTS;
   while (attempts > 0) {
     let index = getRandomInt(array.length);
     if (usedNums.includes(index)) {
@@ -101,6 +101,7 @@ function initMap() {
   map = new Map();
   map.set(GENERAL, []);
   map.set(HOW, []);
+  map.set(HOW_MUCH, []);
   map.set(WHAT, []);
   map.set(WHEN, []);
   map.set(WHERE, []);

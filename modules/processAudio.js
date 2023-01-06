@@ -7,6 +7,8 @@ const {
   NoSubscriberBehavior,
 } = require("@discordjs/voice");
 
+const SOUND_COUNT = 123;
+
 let subscription = null;
 let playing = false;
 let timeout = null;
@@ -31,7 +33,15 @@ player
     if (timeout != null) clearTimeout(timeout);
   });
 
-function processAudio(songId, message, client) {
+function processAudio(message, client) {
+  let songId = 0;
+  for (let i = 1; i <= SOUND_COUNT; i++) {
+    if (message.content === i.toString()) {
+      songId = i;
+      break;
+    }
+  }
+
   if (songId !== 0 && message.channel.id === "961000525254520932") {
     console.log("Trying to type in VIP room");
     message.delete();
@@ -71,4 +81,4 @@ function processAudio(songId, message, client) {
   }
 }
 
-module.exports = processAudio;
+module.exports = { SOUND_COUNT, processAudio };
