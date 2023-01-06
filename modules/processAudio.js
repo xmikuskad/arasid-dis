@@ -7,7 +7,7 @@ const {
   NoSubscriberBehavior,
 } = require("@discordjs/voice");
 
-const SOUND_COUNT = 123;
+const SOUND_COUNT = 124;
 
 let subscription = null;
 let playing = false;
